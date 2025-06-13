@@ -11,6 +11,7 @@ public class StatisticsScheduler {
     }
 
     // Scheduled task to update statistics every day at midnight
+    // Will be changed
     @Scheduled(cron = "0 0 0 * * ?") 
     public void updateDailyStatistics() {
         statisticsService.updateStatistics();
